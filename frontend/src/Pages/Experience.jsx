@@ -16,7 +16,7 @@ export default function Experience() {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-        const res = await axios.get('/api/v1/exp/getexp');
+        const res = await axios.get('https://my-portfolio-anime.onrender.com/api/v1/exp/getexp');
         setData(res.data.experience)
         console.log(res)
       } catch (error) {
