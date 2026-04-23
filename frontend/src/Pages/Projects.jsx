@@ -13,7 +13,7 @@ export default function Projects() {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-        const res = await axios.get('/api/v1/projects/getproject');
+        const res = await axios.get('https://my-portfolio-anime.onrender.com/api/v1/projects/getproject');
         setData(res.data.data);
         console.log(res.data.data);
       } catch (error) {
