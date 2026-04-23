@@ -19,7 +19,7 @@ export default function Skills() {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-        const res = await axios.get('/api/v1/skills/getskill');
+        const res = await axios.get('https://my-portfolio-anime.onrender.com/api/v1/skills/getskill');
         setData(res.data.skills);
         console.log(res.data)
       } catch (error) {
